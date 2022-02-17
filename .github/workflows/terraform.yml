@@ -9,10 +9,17 @@ jobs:
   Terraform-Init:
     runs-on: macos-latest
     
+    
     steps:  
     
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
+        
+      - name: Dir
+        id: CD
+        run: cd main
+        continue-on-error: true
+     
     
       - name: Terraform fmt
         id: fmt
