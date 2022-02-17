@@ -15,9 +15,12 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
         
+        
       - name: Dir
         id: CD
-        run: cd Users/runner/work/okta-terraform/main
+        run: chdir Users/runner/work/okta-terraform/main
+        #TERRAFORM CLI PATH:
+        #terraform -chdir=environments/production apply
         #/Users/runner/work/okta-terraform/okta-terraform/main'
         continue-on-error: true
      
