@@ -3,7 +3,7 @@ on: [push]
 
 defaults:
   run:
-    shell: bash
+    shell: zsh
     
 jobs:
   Terraform-Init:
