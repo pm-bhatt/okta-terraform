@@ -21,5 +21,9 @@ jobs:
 
       - name: Terraform Plan
         id: plan
-        run: terraform plan -no-color
+        run: terraform plan
         continue-on-error: true
+      - name: Terraform Apply
+        id: apply
+        run: terraform apply
+        continue-on-error: false
