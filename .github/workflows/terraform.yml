@@ -3,12 +3,17 @@ on: [push]
 
 defaults:
   run:
-    shell: zsh
+    shell: bash
     
 jobs:
   Terraform-Init:
     runs-on: macos-latest
+    
     steps:  
+    
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v1
+    
       - name: Terraform fmt
         id: fmt
         working-directory: main
