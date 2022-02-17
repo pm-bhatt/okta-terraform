@@ -17,7 +17,8 @@ jobs:
         
       - name: Dir
         id: CD
-        run: cd main
+        run: cd Users/runner/work/okta-terraform/main
+        #/Users/runner/work/okta-terraform/okta-terraform/main'
         continue-on-error: true
      
     
