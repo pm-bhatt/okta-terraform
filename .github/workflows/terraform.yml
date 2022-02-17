@@ -16,7 +16,6 @@ jobs:
     
       - name: Terraform fmt
         id: fmt
-        working-directory: main
         run: terraform fmt -check
         continue-on-error: true
 
