@@ -15,15 +15,12 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
         
-        #env:
-   # TERRAFORM_CLI_PATH: /Users/runner/work/_temp/800a5162-5a83-488e-a329-2405a8dd8840
-#/Users/runner/work/_temp/e01cfbe1-78aa-468e-ba11-b58cecf66059.sh: line 1: chdir: command not found
-        
       - name: Dir
         id: CD
         continue-on-error: true
         env:
           TERRAFORM_CLI_PATH: Users/runner/work/okta-terraform/main
+        run: echo"For work Directory"  
      
       - name: Terraform fmt
         id: fmt
