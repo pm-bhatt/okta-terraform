@@ -1,11 +1,18 @@
-name: GitHub Actions Demo
-on: [push]
+name: Okta Terraform
+on: 
+  push:
+      branches:
+        - master
+  pull_request:
+
+defaults:
+  run:
+    shell: bash
+    
 jobs:
   Terraform-Init:
     runs-on: macos-latest
-    steps:
-      - uses: hashicorp/setup-terraform@v1
-      - run: terraform init
+    steps:  
       - name: Terraform fmt
         id: fmt
         run: terraform fmt -check
@@ -23,6 +30,7 @@ jobs:
         id: plan
         run: terraform plan
         continue-on-error: true
+      
       - name: Terraform Apply
         id: apply
         run: terraform apply
