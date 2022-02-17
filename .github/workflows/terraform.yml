@@ -21,22 +21,18 @@ jobs:
 
       - name: Terraform Init
         id: init
-        working-directory: main
         run: terraform init
 
       - name: Terraform Validate
-        working-directory: main
         id: validate
         run: terraform validate
 
       - name: Terraform Plan
         id: plan
-        working-directory: main
         run: terraform plan
         continue-on-error: true
       
       - name: Terraform Apply
         id: apply
-        working-directory: main
         run: terraform apply
         continue-on-error: false
