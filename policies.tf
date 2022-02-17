@@ -1,8 +1,7 @@
 # Threath Insight setting to be set as Log and Block IP Address
-#resource "okta_threat_insight_settings" "logandblock" {
- # action = "block"
-  
-#}
+resource "okta_threat_insight_settings" "logandblock" {
+action = "block"  
+}
 /*
 resource "okta_behavior" "my_country" {
   name = "My Country"
