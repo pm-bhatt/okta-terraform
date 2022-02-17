@@ -20,7 +20,7 @@ jobs:
         continue-on-error: true
         env:
           TERRAFORM_CLI_PATH: Users/runner/work/okta-terraform/main
-        run: echo"For work Directory"  
+        run: echo "For work Directory"
      
       - name: Terraform fmt
         id: fmt
