@@ -17,7 +17,7 @@ provider "okta" {
   api_token = "00iHEsChMub-lC_1Igx7HhINh-ldDV46DmCoKsXaf5"
 }
 # Configure the GitHub Provider
-provider "github" {
+/*provider "github" {
   token = "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"
 }
 resource "github_repository" "okta-terraform" {
@@ -30,4 +30,4 @@ resource "github_repository" "okta-terraform" {
   has_downloads = false
   license_template = "mit"
   topics = ["okta", "public", "ci", "continuous-integration", "terraform", "github", "github-actions"]
-}
+}*/
