@@ -17,8 +17,7 @@ jobs:
         
       - name: Dir
         id: CD
-        run: echo "For work Directory"
-             terraform -chdir=okta-terraform/main
+        run: terraform -chdir=okta-terraform/main
         continue-on-error: false
      
       - name: Terraform fmt
