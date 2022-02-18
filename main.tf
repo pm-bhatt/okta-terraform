@@ -12,7 +12,7 @@ terraform {
 }
 # Configure the Okta Provider
 provider "okta" {
-  org_name  = "dev-78130576.okta.com"
+  org_name  = "dev-78130576"
   base_url  = "okta.com"
   api_token = "00iHEsChMub-lC_1Igx7HhINh-ldDV46DmCoKsXaf5"
 }
